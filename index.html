@@ -154,7 +154,20 @@
     
             <!-- Content Overlay -->
             <div class="content">
-                <h1>HARI OM PIPES</h1>
+                <h1>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>P</span>
+                    <span>I</span>
+                    <span>P</span>
+                    <span>E</span>
+                    <span>S</span>
+                    <!-- HARI OM PIPES -->
+                </h1>
                 <p>ENGINEERED FOR STRENGTH AND RESILIENCE</p>
                 <div>
                     <!-- <a href="#" class="btn btn-light"><i class="fas fa-play-circle"></i> Watch Video</a>
@@ -206,16 +219,59 @@
                 max-width: 800px;
                 padding: 20px;
             }
-    
-            .hero-section h1 {
-                font-size: 5rem;
-                margin-bottom: 20px;
-                color: white;
-                font-weight: 900;
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: #f68a0a;
-            }
-    
+/*     
+            .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f68a0a;
+    display: inline-block;
+}
+
+.content h1 span {
+    display: inline-block;
+    animation: bounceIn 1s ease-in-out forwards 1;
+    opacity: 0;
+    animation-delay: calc(0.1s * var(--i)); /* staggered animation */
+}
+
+/* Keyframes for a smooth bounce effect */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Target individual spans with delay */
+.content h1 span:nth-child(1) { --i: 0; }
+.content h1 span:nth-child(2) { --i: 1; }
+.content h1 span:nth-child(3) { --i: 2; }
+.content h1 span:nth-child(4) { --i: 3; }
+.content h1 span:nth-child(5) { --i: 4; }
+.content h1 span:nth-child(6) { --i: 5; }
+.content h1 span:nth-child(7) { --i: 6; }
+.content h1 span:nth-child(8) { --i: 7; }
+.content h1 span:nth-child(9) { --i: 8; }
+.content h1 span:nth-child(10) { --i: 9; }
+.content h1 span:nth-child(11) { --i: 10; }
+
             .hero-section p {
                 font-size: 1.25rem;
                 margin-bottom: 30px;
