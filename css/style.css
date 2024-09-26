@@ -1021,3 +1021,13 @@
   .whatsapp a i{
     font-size: 30px;
   }
+
+  .Hariom-logo{
+    width: 100%;
+  }
+
+  @media(max-width:992px){
+    .Hariom-logo{
+        width: 75%;
+    }
+  }
